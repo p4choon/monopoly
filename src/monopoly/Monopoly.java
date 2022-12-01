@@ -26,6 +26,34 @@ public class Monopoly{
             ig.printarTirada(tirada);
         }
         
+        InterfazGrafica p = new InterfazGrafica();
+        Jugador j = new Jugador();
+        
+        boolean salir = true;
+        Integer opcion;
+        
+        
+        while(salir == true){
+            
+            p.printMenu();
+            
+            if(opcion == 1){
+                
+                j.Jugadores();
+
+            }else if(opcion == 2){
+                
+            }else if(opcion == 3){
+                
+            }else if(opcion == 4){
+                
+            }else{
+                
+            }
+        }
+
+        
+        
     }
     
 }

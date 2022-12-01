@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package monopoly;
+import java.util.HashMap;
 
 /**
  *
@@ -10,6 +11,7 @@ package monopoly;
  */
 public class Tablero extends Monopoly {
     Integer [] dados;
+    HashMap <Integer, Casilla> casillas = new HashMap<Integer, Casilla>();
     
     public Integer[] tirarDados() {
         
@@ -28,6 +30,12 @@ public class Tablero extends Monopoly {
         }
         return repe;
     }
+    
+    
+   public Tablero(){
+       casillas.put( 1, new Casilla() );
+   }
+
     
     
 }
